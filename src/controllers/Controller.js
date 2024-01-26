@@ -27,15 +27,15 @@ class Controller {
     }
   }
 
-  // async criaNovo(req, res) {
-  //   const dadosParaCriacao = req.body;
-  //   try {
-  //     const novoRegistroCriado = await this.entidadeService.criaRegistro(dadosParaCriacao);
-  //     return res.status(200).json(novoRegistroCriado);
-  //   } catch (erro) {
-  //     // erro
-  //   }
-  // }
+  async criaNovo(req, res) {
+    const dadosParaCriacao = req.body;
+    try {
+      const novoRegistroCriado = await this.entidadeService.criaRegistro(dadosParaCriacao);
+      return res.status(200).json(novoRegistroCriado);
+    } catch (erro) {
+      // erro
+    }
+  }
 
   async atualiza(req, res) {
     const { id } = req.params;
@@ -56,17 +56,17 @@ class Controller {
     }
   }
 
-  // async exclui(req, res) {
-  //   const { id } = req.params;
-  //   try {
-  //     await this.entidadeService.excluiRegistro(Number(id));
-  //     return res.status(200).json({ mensagem: `id ${id} deletado` });
+  async exclui(req, res) {
+    const { id } = req.params;
+    try {
+      await this.entidadeService.excluiRegistro(Number(id));
+      return res.status(200).json({ mensagem: `id ${id} deletado` });
 
 
-  //   } catch (error) {
-  //     return res.status(500).json(error.message);
-  //   }
-  // }
+    } catch (error) {
+      return res.status(500).json(error.message);
+    }
+  }
 }
 
 module.exports = Controller;
