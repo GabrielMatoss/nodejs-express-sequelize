@@ -14,6 +14,7 @@ class Controller {
 
   async pegaUmPorId(req, res) {
     const { id } = req.params;
+
     try {
       const umRegistro = await this.entidadeService.pegaUmRegistroPorId(Number(id));
       
@@ -29,6 +30,7 @@ class Controller {
 
   async criaNovo(req, res) {
     const dadosParaCriacao = req.body;
+
     try {
       const novoRegistroCriado = await this.entidadeService.criaRegistro(dadosParaCriacao);
       return res.status(200).json(novoRegistroCriado);
@@ -61,8 +63,7 @@ class Controller {
     try {
       await this.entidadeService.excluiRegistro(Number(id));
       return res.status(200).json({ mensagem: `id ${id} deletado` });
-
-
+      
     } catch (error) {
       return res.status(500).json(error.message);
     }
