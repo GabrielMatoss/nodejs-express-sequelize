@@ -381,27 +381,27 @@
 			},
 			"response": []
 		},
-		// {
-		// 	"name": "Pegar lista de matriculas por estudante",
-		// 	"request": {
-		// 		"method": "GET",
-		// 		"header": [],
-		// 		"url": {
-		// 			"raw": "http://localhost:3000/pessoas/1/matriculas",
-		// 			"protocol": "http",
-		// 			"host": [
-		// 				"localhost"
-		// 			],
-		// 			"port": "3000",
-		// 			"path": [
-		// 				"pessoas",
-		// 				"1",
-		// 				"matriculas"
-		// 			]
-		// 		}
-		// 	},
-		// 	"response": []
-		// },
+		{
+			"name": "Pegar lista de matriculas por estudante",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pessoas/1/matriculas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pessoas",
+						"1",
+						"matriculas"
+					]
+				}
+			},
+			"response": []
+		},
 		{
 			"name": "Criar uma matrícula por estudante",
 			"request": {
