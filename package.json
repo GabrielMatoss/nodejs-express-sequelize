@@ -1,6 +1,6 @@
 {
   "name": "api-express-sequelize",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Repositório do curso de API com Node.js, Express e Sequelize",
   "main": "server.js",
   "scripts": {
