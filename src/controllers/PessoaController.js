@@ -17,7 +17,7 @@ class PessoaController extends Controller {
       return res.status(500).json({ erro: erro.message });
     }
   }
-  
+
   async pegaTodasAsMatriculas(req, res) {
     const { estudante_id } = req.params;
     try {

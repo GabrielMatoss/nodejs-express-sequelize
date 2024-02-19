@@ -5,7 +5,7 @@ class Services {
     this.model = nomeDoModel;
   }
 
-  async pegaTodosOsRegistros () {
+  async pegaTodosOsRegistros() {
     return dataSource[this.model].findAll();
   }
 
@@ -19,12 +19,11 @@ class Services {
     if (registro === null) {
       return false;
     } 
-
     return registro;
   }
 
   async pegaUmRegistro(where) {
-    return dataSource[this.model].findOne({ where: {...where} });
+    return dataSource[this.model].findOne({ where: { ...where } });
   }
 
   async criaRegistro(dadosDoRegistro) {
@@ -35,7 +34,6 @@ class Services {
     const listaDeRegistrosAtualizados = await dataSource[this.model].update(dadosAtualizados, {
       where: { ...where }
     });
-
     if (listaDeRegistrosAtualizados[0] === 0) {
       return false;
     }
@@ -46,6 +44,5 @@ class Services {
     return dataSource[this.model].destroy({ where: { id: id } });
   }
 }
-
 
 module.exports = Services;
