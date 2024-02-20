@@ -8,8 +8,8 @@
 
 [x] - É importante poder consultar todas as matrículas confirmadas referentes a estudante X de forma rápida.
 
-* O cliente gostaria de poder consultar as turmas abertas por intervalo de data, para não receber informações desnecessárias (como turmas antigas).
+[x] - O cliente gostaria de poder consultar as turmas abertas por intervalo de data, para não receber informações desnecessárias (como turmas antigas).
 
-* O cliente quer poder consultar as matrículas por turma e saber quais delas estão lotadas, para organizar melhor as matrículas.
+[x] - O cliente quer poder consultar as matrículas por curso e saber quais delas estão lotadas, para organizar melhor as matrículas.
 
 * O cliente gostaria que, uma vez que o cadastro de um estudante fosse desativado, todas as matrículas relativas a este estudante automaticamente passassem a constar como “canceladas”.
